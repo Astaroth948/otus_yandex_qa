@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 
 from pages.base_page import BasePage
 
-PATH_TO_FILE = Path('autotests', 'data', 'file.txt')
+PATH_TO_FILE = Path('data', 'file.txt')
 
 
 class DiskLeftPanel(BasePage):

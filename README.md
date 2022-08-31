@@ -15,7 +15,7 @@
 
 Запуск тестов:
 
-```pytest autotests\tests\test_copy_file_in_folder.py -s --executor=192.168.0.102 --headless --login=login --password=password```
+```pytest tests\test_copy_file_in_folder.py -s --executor=192.168.0.102 --headless --login=login --password=password```
 
 
 Аргументы командной строки:

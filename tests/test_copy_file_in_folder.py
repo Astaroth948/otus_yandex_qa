@@ -4,7 +4,7 @@ from selenium.webdriver.remote.webdriver import WebDriver
 
 from pages.disk_page import DiskPage
 from pages.elements.disk_left_panel import DiskLeftPanel
-from tests.conftest import copy_file_in_folder, create_folder, delete_file, upload_file
+from tests.conftest import copy_file_in_folder, create_folder, delete_file
 
 FOLDER: str = 'TestFolder789'
 FILE: str = 'Санкт-Петербург.jpg'
