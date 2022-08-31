@@ -11,7 +11,7 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-from autotests.tools import new_expected_conditions as NEC
+from tools import new_expected_conditions as NEC
 
 
 class BasePage:

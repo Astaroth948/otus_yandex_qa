@@ -9,10 +9,10 @@ from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.opera import options as OperaOptions
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from autotests.pages.auth_page import AuthPage, AuthPageText
-from autotests.pages.disk_page import DiskPage
-from autotests.pages.main_page import MainPage
-from autotests.types import AuthData
+from pages.auth_page import AuthPage, AuthPageText
+from pages.disk_page import DiskPage
+from pages.main_page import MainPage
+from types import AuthData
 
 
 def pytest_addoption(parser: Parser) -> None:
