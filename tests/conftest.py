@@ -2,11 +2,11 @@ from pathlib import Path
 
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from autotests.pages.disk_page import DiskPage
-from autotests.pages.elements.action_bar import ActionBar
-from autotests.pages.elements.disk_left_panel import DiskLeftPanel
-from autotests.pages.elements.modal import Modal, ModalText
-from autotests.pages.elements.notifications import Notifications
+from pages.disk_page import DiskPage
+from pages.elements.action_bar import ActionBar
+from pages.elements.disk_left_panel import DiskLeftPanel
+from pages.elements.modal import Modal, ModalText
+from pages.elements.notifications import Notifications
 
 
 def create_folder(driver: WebDriver, name_folder: str) -> None:

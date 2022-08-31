@@ -2,9 +2,9 @@ import allure
 import pytest
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from autotests.pages.disk_page import DiskPage
-from autotests.pages.elements.action_bar import ActionBar
-from autotests.pages.elements.notifications import Notifications
+from pages.disk_page import DiskPage
+from pages.elements.action_bar import ActionBar
+from pages.elements.notifications import Notifications
 
 
 @allure.epic('Проверки Яндекс Диска')

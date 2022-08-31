@@ -3,7 +3,7 @@ from dataclasses import dataclass
 import allure
 from selenium.webdriver.common.by import By
 
-from autotests.pages.base_page import BasePage
+from pages.base_page import BasePage
 
 
 class AuthPage(BasePage):

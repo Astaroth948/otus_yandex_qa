@@ -2,8 +2,8 @@ import allure
 import pytest
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from autotests.pages.elements.disk_left_panel import PATH_TO_FILE
-from autotests.tests.conftest import delete_file, upload_file
+from pages.elements.disk_left_panel import PATH_TO_FILE
+from tests.conftest import delete_file, upload_file
 
 FILE: str = 'file.txt'
 

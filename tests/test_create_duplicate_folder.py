@@ -2,9 +2,9 @@ import allure
 import pytest
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from autotests.pages.elements.disk_left_panel import DiskLeftPanel
-from autotests.pages.elements.modal import Modal, ModalText
-from autotests.tests.conftest import create_folder, delete_file
+from pages.elements.disk_left_panel import DiskLeftPanel
+from pages.elements.modal import Modal, ModalText
+from tests.conftest import create_folder, delete_file
 
 NAME_FOLDER: str = 'TestFolder678'
 

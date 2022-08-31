@@ -2,7 +2,7 @@ import allure
 import pytest
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from autotests.tests.conftest import create_folder, delete_file, rename_file
+from tests.conftest import create_folder, delete_file, rename_file
 
 OLD_NAME: str = 'TestFolder777'
 NEW_NAME: str = 'TestFolder555'
