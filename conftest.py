@@ -12,7 +12,7 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from pages.auth_page import AuthPage, AuthPageText
 from pages.disk_page import DiskPage
 from pages.main_page import MainPage
-from types import AuthData
+from tools.types import AuthData
 
 
 def pytest_addoption(parser: Parser) -> None:
