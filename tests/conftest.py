@@ -22,7 +22,6 @@ def create_folder(driver: WebDriver, name_folder: str) -> None:
     modal.click_button_save()
     modal.assert_modal_closed()
     notifications.assert_open_toast_create_folder(name_folder=name_folder)
-    notifications.click_toast()
     notifications.assert_toast_closed()
     disk_page.assert_file(name_file=name_folder)
     action_bar.click_button_cancel_selection()
@@ -36,7 +35,6 @@ def delete_file(driver: WebDriver, name_file: str) -> None:
     disk_page.click_file(name_file=name_file)
     action_bar.click_button_delete()
     notifications.assert_open_toast_delete()
-    notifications.click_toast()
     notifications.assert_toast_closed()
     disk_page.assert_desired_file_absence(name_file=name_file)
 
@@ -51,7 +49,6 @@ def group_delete_files(driver: WebDriver, names_files: list) -> None:
     action_bar.click_button_delete()
 
     notifications.assert_open_toast_delete()
-    notifications.click_toast()
     notifications.assert_toast_closed()
     disk_page.assert_desired_files_absence(names_files=names_files)
 
@@ -82,7 +79,6 @@ def move_file_in_folder(driver: WebDriver, name_file: str, name_folder: str) -> 
     modal.assert_modal_closed()
 
     notifications.assert_open_toast_move(name_file=name_file, name_folder=name_folder)
-    notifications.click_toast()
     notifications.assert_toast_closed()
     disk_page.assert_desired_file_absence(name_file=name_file)
 
@@ -102,7 +98,6 @@ def group_move_files_in_folder(driver: WebDriver, names_files: list, name_folder
     modal.assert_modal_closed()
 
     notifications.assert_open_toast_group_move(names_files=names_files, name_folder=name_folder)
-    notifications.click_toast()
     notifications.assert_toast_closed()
     disk_page.assert_desired_files_absence(names_files=names_files)
 
@@ -121,7 +116,6 @@ def copy_file_in_folder(driver: WebDriver, name_file: str, name_folder: str) -> 
     modal.assert_modal_closed()
 
     notifications.assert_open_toast_copy(name_file=name_file, name_folder=name_folder)
-    notifications.click_toast()
     notifications.assert_toast_closed()
     disk_page.assert_file(name_file=name_file)
 
@@ -141,7 +135,6 @@ def group_copy_files_in_folder(driver: WebDriver, names_files: list, name_folder
     modal.assert_modal_closed()
 
     notifications.assert_open_toast_group_copy(names_files=names_files, name_folder=name_folder)
-    notifications.click_toast()
     notifications.assert_toast_closed()
 
 

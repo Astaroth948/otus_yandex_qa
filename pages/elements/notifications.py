@@ -70,7 +70,7 @@ class Notifications(BasePage):
         self._click(locator=self.NOTIFICATION, timeout=timeout)
 
     @allure.step('Проверить, что оповещение закрылось')
-    def assert_toast_closed(self, timeout: int = 5) -> None:
+    def assert_toast_closed(self, timeout: int = 15) -> None:
         self._assert_element_closed(locator=self.NOTIFICATION, timeout=timeout)
 
     @allure.step('Проверить, что появилось оповещение об окончании загрузки файла')
